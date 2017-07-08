@@ -1,0 +1,2874 @@
+/* css for wp_ukuu_custom */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700,400italic,600italic,700italic,800italic);
+
+/*flex*/
+
+/* Uncomment and set these variables to customize the grid. */
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.row.reverse {
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  -ms-flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse;
+}
+
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  box-sizing: border-box;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.col-xs {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  -ms-flex-preferred-size: 8.333%;
+  flex-basis: 8.333%;
+  max-width: 8.333%;
+}
+
+.col-xs-2 {
+  -ms-flex-preferred-size: 16.667%;
+  flex-basis: 16.667%;
+  max-width: 16.667%;
+}
+
+.col-xs-3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+.col-xs-5 {
+  -ms-flex-preferred-size: 41.667%;
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  -ms-flex-preferred-size: 58.333%;
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+.col-xs-8 {
+  -ms-flex-preferred-size: 66.667%;
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+
+.col-xs-9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  -ms-flex-preferred-size: 83.333%;
+  flex-basis: 83.333%;
+  max-width: 83.333%;
+}
+
+.col-xs-11 {
+  -ms-flex-preferred-size: 91.667%;
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+
+.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.667%;
+}
+
+.start-xs {
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.top-xs {
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.middle-xs {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bottom-xs {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.first-xs {
+  -ms-flex-order: -1;
+  -webkit-box-ordinal-group: 0;
+  order: -1;
+}
+
+.last-xs {
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 46rem;
+  }
+
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-sm {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-sm-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-sm-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-sm-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-sm-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-sm-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-sm-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-sm-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-sm-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-sm {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-sm {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-sm {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-sm {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-sm {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-sm {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-sm {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-sm {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-sm {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-sm {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-md {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-md-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-md-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-md-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-md-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-md-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-md-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-md-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-md-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-md-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-md {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-md {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-md {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-md {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-md {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-md {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-md {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-md {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-md {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-md {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 71rem;
+  }
+
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .col-lg {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-lg-1 {
+    -ms-flex-preferred-size: 8.333%;
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-lg-2 {
+    -ms-flex-preferred-size: 16.667%;
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-lg-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-lg-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-lg-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-lg-8 {
+    -ms-flex-preferred-size: 66.667%;
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-lg-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    -ms-flex-preferred-size: 83.333%;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-lg-11 {
+    -ms-flex-preferred-size: 91.667%;
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.667%;
+  }
+
+  .start-lg {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-lg {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-lg {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-lg {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-lg {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .bottom-lg {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .around-lg {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-lg {
+    -ms-flex-order: -1;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .last-lg {
+    -ms-flex-order: 1;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+/*end flex */
+
+@media screen\0
+{
+    *, *:before, *:after
+{
+    box-sizing:content-box !important;
+}
+}
+
+
+.month-act {
+    width:100%;
+    height:auto;
+    color:#FFFFFF;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.day-act {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.activity_date {
+    float: left;
+    height: 58px;
+    min-height: 70px;
+    width:17%;
+}
+
+.activity_info {
+    float:left;
+    width:55%;
+    min-height: 70px;
+    height: auto;
+    top: 30px;
+    right: 5px;
+    padding: 0 5px;
+}
+
+.activity_time {
+    float:left;
+    width:25%;
+    height:auto;
+    min-height: 70px;
+}
+
+.user_activity {
+    display: block;
+    margin-bottom: 2px;
+    text-align: justify;
+    min-height: 70px;
+    height: auto;
+    overflow:hidden !important;
+}
+
+#ukuuCRM-dashboard-activities-widget .inside {
+    padding:0px;
+}
+
+#wp-name .row-action ,.activity-wrapper .row-action{
+    font-size:12px !important;
+    padding-top:0px !important;
+    margin:0px !important;
+}
+
+.dayName {
+    color:#FFFFFF;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.time {
+    color:#FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.meridiem {
+    display: inline;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.ukuu-head {
+    height: 30px !important;
+    padding-left:12px;
+}
+
+#post-body-content #first-sidebar-contact {
+    clear: both;
+    float: left;
+    width: 50%;/*408px;*/
+    min-height:348px;
+    position:relative;
+}
+
+.admin_page_view-ukuupeople .wrap h1 {
+    padding-bottom: 2%;
+}
+
+#post-body-content #second-sidebar-contact {
+    float: left;
+    margin-top: 100px;
+    padding-left: 0px;
+    width: /*400px;*/50%;
+    position:relative;
+}
+
+#post-body-content #user-images {
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+#post-body-content #display-name {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    word-wrap: break-word;
+    line-height:28px;
+    padding-right:15px;
+}
+
+#post-body-content #contactdetailsblock {
+    background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    float: left;
+    padding: /*24px;*/5px;
+    width: /*308px;*/94%;
+    min-height: 155px;
+    bottom:0;
+}
+
+#post-body-content #addressblock {
+    background-color: white;
+    border: 1px solid #C0C0C0;
+    /*width: 368px;*/
+    padding:22px 10px;
+    min-height:90px;
+    position:relative;
+    display:block;
+    padding-top:10px;
+    line-height:1.2em;
+}
+
+.post-type-wp-type-contacts #third-sidebar-contact {
+    padding: 8px !important;
+}
+
+#post-body-content #tagblock {
+    background-color: white;
+    border: 1px solid #c0c0c0;
+    padding:15px;
+    margin-top: 8px;
+    /*width: 377px;*/
+    display:block;
+    min-height: 90px;
+}
+
+#post-body-content #activity {
+    clear:both;
+    width:99%;
+    margin-bottom: 15px;
+      padding-top: 2%;
+}
+
+.post-type-wp-type-contacts #postbox-container-1 {
+    clear:both;
+    padding-right: 0;
+}
+
+.post-type-wp-type-contacts #post-body-content {
+    width:129%
+}
+
+.post-type-wp-type-contacts .wp-list-table #wp-email {
+    width:20%;
+}
+
+#activity .page-tablenav {
+    float: right;
+    margin-bottom: 2px;
+}
+
+.post-type-wp-type-activity #post-body-content #titlewrap input{
+    width:98% !important;
+}
+
+.post-type-wp-type-contacts .contactimage {
+    float:left;
+    margin-right:10px;
+}
+
+#contactdetail-table .contactdetailhead {
+    color:#0A73B9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.title-value {
+    color: #959595;
+    font-size: 13px !important;
+}
+
+.title-value a {
+    color: #959595;
+    text-decoration: none;
+}
+
+#wp-color-code {
+    width:55px;
+}
+
+/*css for activity*/
+
+.contribution_amount.activityColor {
+    color: #ffffff;
+    font-size: 13px;
+    height: 48px;
+    min-height: 70px;
+    margin: -8px 0 !important;
+    padding: 10 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 83px;
+
+}
+.date_number {
+    font-size: 30px !important;
+    font-weight: bold !important;
+    line-height: 31px !important;
+}
+
+#wpcf-group-activity-information div[data-wpt-id="wpcf-details"] textarea{
+    padding:2px 0px !important;
+}
+
+.post-type-wp-type-activity #touchpoint-list {
+    width:99%;
+    height:40px;
+}
+
+.post-type-wp-type-activity #touchpoint-types .hndle {
+    display:none;
+}
+
+.post-type-wp-type-contacts #posts-filter .tablenav div:nth-child(2) select , .post-type-wp-type-activity #posts-filter .tablenav div:nth-child(2) select{
+    float:none;
+}
+
+/*.post-type-wp-type-contacts .post-title, .post-type-wp-type-contacts th#title, .post-type-wp-type-contacts th.column-title {*/
+.post-type-wp-type-contacts .post-title, .post-type-wp-type-contacts th#title, .post-type-wp-type-contacts th.column-title ,#types-child-table-wp-type-contacts-wp-type-activity .wpcf-pr-pagination-update--old , #types-child-table-wp-type-contacts-wp-type-activity .wpcf-pagination-boottom , #types-child-table-wp-type-contacts-wp-type-activity .wpcf-pagination-top {
+    display: none;
+}
+
+/* Activity status CSS */
+.ukuucheck {
+    display: inline-block;
+    background: url('../images/ukuusprite.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    background-position: -5px -130px;
+    width: 20px;
+    height: 20px;
+    float:left;
+}
+
+.ukuuclock {
+    display: inline-block;
+    background: url('../images/ukuusprite.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    background-position: -5px -155px;
+    width: 20px;
+    height: 20px;
+    float:left;
+}
+
+/* paper icon CSS */
+.paper-icon {
+    background-position: -101px -222px;
+    background-image: url("../images/jquery-ui-3E3E3E.gif");
+    width:16px;
+    height:16px;
+    float:right;
+    margin-right:20px;
+}
+
+/* CSS For meta boxes */
+.post-type-wp-type-contacts #postbox-container-2 .postbox div.inside > div > div > div{
+    width:46% !important;
+    border-bottom:none;
+    padding: 0 23px 0 0;
+    display: inline-block;  
+}
+
+.post-type-wp-type-contacts #postbox-container-2 .postbox div.inside > div > div > div .cmb-th, .post-type-wp-type-contacts #postbox-container-2 .postbox div.inside > div > div > div .cmb-td{
+    float:none;
+    width:100%;
+}
+
+.post-type-wp-type-contacts #postbox-container-2 .postbox div.inside > div > div > div input.cmb2-upload-file {
+    width: 60% !important;
+}
+
+.post-type-wp-type-contacts #postbox-container-2 .postbox div.inside > div > div > div input.cmb2-text-medium {
+    width: 100% !important;
+}
+
+/* Favorites star */
+.add-star {
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/star.png') no-repeat;
+}
+
+.remove-star {
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/star2.png') no-repeat;
+}
+
+/* Dashborad CSS for favorites listing */
+.dashboard-favorites-list {
+    margin-top:5px;
+}
+
+.dashboard-favorites-list .contact-image, .dashboard-favorites-list .phone {
+    float: left;
+    width: 15%;
+    height: 69px;
+}
+
+.dashboard-favorites-list .display-name {
+    float: left;
+    width: 70%;
+}
+
+.dashboard-favorites-list .display-name .contact-name , .dashboard-favorites-list .display-name .dashboard-email {
+    margin-left: 20px;
+}
+
+/**
+  * css for settings
+**/
+
+.type-list , .type-list tr{
+    width:100%;
+}
+
+.type-list tr {
+    height:50px;
+}
+
+.type-list td {
+    padding:10px;
+    color:#0074a2;
+    margin-top:5px;
+}
+
+.type-list .color {
+    float:right;
+    height: 20px;
+    width: 20px;
+}
+
+.main-type-list {
+    margin-top:30px;
+    width:98%;
+}
+
+.main-type-list span {
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+.main-type-list a{
+    text-decoration:none;
+}
+
+#post-body-content .add-touchpoint {
+    margin-top:3px;
+}
+
+@media only screen and (max-width: 1059px) {
+
+    .post-type-wp-type-contacts .add-touchpoint {  bottom: 100px !important; }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+.post-type-wp-type-contacts #first-sidebar-contact {
+    width: 50% !important;/*408px;*/
+}
+}
+
+/*=====04.03.2015 css start=====*/
+
+.plugins_page_ukuupeople-home .wrap {
+    margin: 0px 30px;
+}
+
+.plugins_page_ukuupeople-home .box {
+    margin-bottom: 50px;
+}
+
+.plugins_page_ukuupeople-home .licence-box {
+    margin-bottom: 50px;
+}
+
+.plugins_page_ukuupeople-home .content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.plugins_page_ukuupeople-home table th span {
+    color: #1494a1;
+}
+
+.plugins_page_ukuupeople-home .inactive table th span {
+    color: #888888;
+}
+
+.plugins_page_ukuupeople-home :checked + span {
+    color: #888888 !important;
+}
+
+.plugins_page_ukuupeople-home .submit {
+    display: inline;
+    margin: 0;
+    vertical-align: top;
+}
+
+.plugins_page_ukuupeople-home .green {
+    color: #008000;
+    display: block;
+    margin-top: 2px;
+}
+
+.plugins_page_ukuupeople-home .button {
+    background: none repeat scroll 0 0 #00A1BE;
+    border: 0px;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 2px 50px 1px;
+    height: 28px;
+}
+
+.plugins_page_ukuupeople-home .button:hover {
+    background: none repeat scroll 0 0 #1e8cbe;
+    color: #ffffff;
+}
+
+.plugins_page_ukuupeople-home p.submit #submit {
+    margin-top: 20px;
+}
+
+.plugins_page_ukuupeople-home .inactive {
+    opacity: 0.4;
+}
+
+.plugins_page_ukuupeople-home .inactive h2.pg-title {
+    color: #888888;
+}
+
+.plugins_page_ukuupeople-home .inactive table th {
+    color: #888888;
+}
+
+.plugins_page_ukuupeople-home h2.pg-title {
+    color: #EF5231;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+.plugins_page_ukuupeople-home .inactive .green {
+    color: #888888;
+    display: block;
+    margin-top: 2px;
+}
+
+.plugins_page_ukuupeople-home input[type="checkbox"] {
+    float: left;
+    height: 16px;
+    left: 0px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    width: 16px;
+}
+
+.plugins_page_ukuupeople-home input[type="checkbox"] + span {
+    background: url("../images/gr_custom-inputs-square.png") no-repeat scroll 0 -19px rgba(0, 0, 0, 0);
+    height: 16px;
+    padding-left: 24px;
+    margin-left: -15px;
+}
+
+.plugins_page_ukuupeople-home input[type="checkbox"]:checked + span {
+    background-position: 0 -39px;
+}
+
+.plugins_page_ukuupeople-home .inactive input[type="checkbox"]:checked + span {
+    background-position: 0 -58px;
+}
+
+.plugins_page_ukuupeople-home .pl-number {
+    color: #525252;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 38px;
+    font-weight: bold;
+    min-height: 30px;
+    margin-right: 25px;
+    margin-top: 16px;
+}
+
+.plugins_page_ukuupeople-home .wrap .form-table th {
+    padding: 16px 10px 20px 0;
+}
+
+.plugins_page_ukuupeople-home .wrap .form-table td {
+    display: block;
+    padding: 8px 10px;
+}
+
+.plugins_page_ukuupeople-home .wrap .licence .form-table th {
+    padding: 19px 10px 0 0;
+}
+
+.plugins_page_ukuupeople-home .wrap .licence .form-table tr:nth-child(2) th {
+    padding: 8px 10px 0 0;
+}
+
+.plugins_page_ukuupeople-home .wrap .licence .form-table td {
+    padding: 10px 10px 12px;
+}
+
+.plugins_page_ukuupeople-home .wrap .licence .form-table tr:nth-child(2) td {
+    padding: 6px 10px 0;
+}
+
+.plugins_page_ukuupeople-home .instruction {
+    display: block;
+    margin-top: 16px;
+}
+
+/*=====04.03.2015 css end=====*/
+
+
+
+
+/*=========Responsive css start================*/
+
+
+/**********************************************/
+
+@media screen and (max-width: 1032px) {
+
+.plugins_page_ukuupeople-home .wrap .form-table label.description {
+	display: block;
+}
+
+}
+
+/**********************************************/
+
+/**********************************************/
+@media screen and (max-width: 782px) {
+
+.plugins_page_ukuupeople-home .wrap .form-table td {
+	padding: 8px 0px;
+}
+
+.plugins_page_ukuupeople-home .wrap .licence .form-table td {
+	padding: 10px 0px 12px;
+}
+
+}
+
+/**********************************************/
+
+/**********************************************/
+
+@media screen and (max-width: 602px) {
+
+.plugins_page_ukuupeople-home .content {
+	width: 100%;
+}
+
+}
+
+/**********************************************/
+
+/**********************************************/
+
+@media screen and (max-width: 480px) {
+
+.dashboard-favorites-list .contact-image {
+	float: left;
+ 	width: 20%;
+ 	height: 69px;
+}
+
+.dashboard-favorites-list .phone {
+	float: left;
+ 	width: 20%;
+ 	height: 69px;
+}
+
+.dashboard-favorites-list .display-name {
+	float: left;
+ 	width: 40%;
+ 	word-wrap:break-word;
+ 	padding:0 10px;
+ 	margin:0 0 0 20px;
+}
+
+.dashboard-favorites-list .contact-name , .dashboard-favorites-list .dashboard-email {
+    	margin-left:0px !important;
+}
+
+.dashboard-favorites-list img {
+    	width:75px;
+    	height:75px;
+}
+
+.activity_date {
+  	font-size:10px;
+}
+
+.time {
+	font-size:15px;
+}
+
+}
+
+/**********************************************/
+
+.post-type-wp-type-contacts #poststuff #post-body.columns-2 {
+	margin-right: 0;
+}
+
+.post-type-wp-type-contacts #post-body.columns-2 #postbox-container-1 {
+	float: right;
+	margin-right: 0;
+	width: 22%;
+}
+
+.post-type-wp-type-contacts #poststuff #post-body.columns-2 #side-sortables
+{
+	width: auto;
+}
+
+.post-type-wp-type-contacts #post-body-content {
+ 	margin-right: 0 !important;
+    	width: 100%;
+}
+
+.post-type-wp-type-contacts #post-body-content #contactdetailsblock {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    bottom: 2px;
+    display: block;
+    margin-bottom: 2px;
+		margin-top: 8px;
+    min-height: 109px;
+    padding: 5px;
+    width: 94%;
+}
+
+.post-type-wp-type-contacts #post-body-content #display-name, .admin_page_view-ukuupeople #post-body-content #display-name{
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    padding-right: 15px;
+    word-wrap: break-word;
+}
+
+.post-type-wp-type-contacts #first-sidebar-contact #display-name {
+    height: auto;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 175px;
+}
+
+.ukuu_opportunity_link {
+    margin-top: 4px;
+}
+
+.post-type-wp-type-contacts .display-name {
+   display: inline-block;
+}
+
+.post-type-wp-type-contacts .add-touchpoint {
+    bottom: 0;
+}
+
+.post-type-wp-type-contacts #first-sidebar-contact .add-touchpoint {
+    
+}
+
+.post-type-wp-type-contacts #post-body.columns-2 #postbox-container-1 {
+    float: right;
+    margin-right: 0;
+    width: 32%;
+}
+
+.post-type-wp-type-contacts #postbox-container-2 {
+    width: 66%;
+}
+
+.profiledetailsblock {
+    display: block;
+}
+
+.ukuu-touchpoint-types-filter {
+    display: inline;
+    padding: 5px;
+    color: #fff !important;
+}
+
+.ukuu-touchpoint-types-filter a {
+    color: #fff !important;
+}
+
+.post-type-wp-type-contacts #post-body-content .add-touchpoint input, .post-type-wp-type-contacts #post-body-content .add-touchpoint a {
+    width: 100%;   	
+}
+
+.post-type-wp-type-contacts #post-body-content .add-touchpoint .edit_contact {
+    margin-bottom:4px;
+}
+
+.post-type-wp-type-contacts #activity .activity-datetime {
+    width:15%;
+}
+
+.post-type-wp-type-contacts #activity .activity-subject {
+    width:20%;
+}
+
+.post-type-wp-type-contacts #activity .activity-assign {
+    width:15%;
+}
+
+.post-type-wp-type-contacts #activity .activity-status {
+    width:5%;
+}
+
+.post-type-wp-type-contacts #activity .activity-desc {
+    display: inline-block;
+    height: 3em;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-type-wp-type-contacts .contact-org-url a{
+    color: #30a08b;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 33px;
+    text-decoration: none;
+}
+
+.post-type-wp-type-contacts #post-body-content #third-sidebar-contact .ui-widget-content { border: none; background: none; }
+
+.post-type-wp-type-contacts #third-sidebar-contact .ui-widget-header { border: none; background: none; }
+
+.post-type-wp-type-contacts .ui-tabs li{
+    border:0px !important;
+}
+
+.post-type-wp-type-contacts .ui-tabs li a[href^="#org-members"] {
+    border-right:0px solid #959595;
+    float: left;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.post-type-wp-type-contacts .ui-tabs li a[href^="#opportunity-tab"] {
+    padding: 0.5em 0 0.5em 1em;
+}
+
+.post-type-wp-type-contacts .ui-tabs li a:focus {
+    box-shadow:none;
+}
+
+.post-type-wp-type-contacts #third-sidebar-contact .ui-state-default {
+    background:none !important;
+}
+
+/*=========Responsive css end================*/
+
+/**
+ * Add-ons SCSS
+ */
+
+.ukuu-addon-wrapper {
+    width:80%;
+    max-width:1200px;
+    
+}
+
+.ukuupeople-add-on-main {   
+    display:flex !important;
+    flex-direction:column;
+    float: left;
+    margin:20px 0;
+    padding: 0;
+    vertical-align: top;
+    
+    text-decoration: none;
+    color: inherit;
+    border: 0px solid #ddd;
+    display: block;
+    min-height: 545px;
+    overflow: hidden;
+    background: #FFF;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition-property: border, background, color;
+    transition-property: border, background, color;
+    -webkit-transition-duration: .05s;
+    transition-duration: .05s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    position: relative;
+    border: 1px solid #F1F1F1;
+    height: auto !important;
+    max-height: auto !important;
+}
+
+.ukuupeople-add-on-main:hover {
+    border: 1px solid #d1d1d1;
+}
+
+
+
+.ukuupeople-add-on-main .addon-content {
+     *zoom: 1;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.ukuupeople-add-on-main .addon-content:before, .ukuupeople-add-on-main .addon-content:after {
+    content: " ";
+    display: table;
+}
+.ukuupeople-add-on-main .addon-content:after {
+    clear: both;
+}
+
+.ukuupeople-add-on-main .addon-content .addon-heading {
+    margin: 20px 0 10px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
+    font-family:Montserrat,sans-serif;
+}
+
+.ukuupeople-add-on-main .addon-content p {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 15px;
+    font-family:Montserrat,sans-serif;
+    color: #3c352e;
+}
+
+.ukuupeople-add-on-main .addon-footer-wrap a {
+    background-color: #fff;
+    border: 1px solid rgb(0, 155, 191);
+    color: rgb(0, 155, 191);
+    display: block;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    font-size: 18px;
+    margin: auto; 
+}
+
+.ukuupeople-add-on-main .addon-footer-wrap a:hover {
+    Background-color: #009BBF;
+    color: #FFF5E7;
+    border: 1px solid #009BBF;
+}
+
+.ukuupeople-add-on-main .addon-content .addon-heading a {
+    outline: none;
+    text-decoration: none;
+}
+
+.ukuupeople-add-on-main .addon-footer-wrap {
+    border-top: 0px solid #ddd;
+    position: relative;
+ 
+    width: 100%;
+    background-color: #FFF;
+    margin: auto !important;
+
+}
+
+.ukuupeople-view-addons-all span.dashicons, .ukuupeople-add-on-main span.dashicons {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    margin: 6px 0 0 0;
+}
+
+.ukuupeople-view-addons-all span.dashicons {
+    margin-left: 3px;
+}
+
+.ukuupeople-add-on-main .addon-footer-wrap a {
+    margin: auto ;
+}
+
+/* License notification start */
+
+.ukuupeople-notification {
+    width: 83%;
+    min-height: 80px;
+    height:auto;
+    border-bottom: 1px solid;
+    border-color: #ACACAC;
+    margin-top: 5px;
+    padding-left: 15%;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.ukuupeople-container {
+    height:auto;
+}
+
+.ukuu-logo-notification {
+    margin-right: 10px;
+    float:left;
+    margin-top:-5px;
+}
+
+.ukuupeople-purchase-addon {
+    float:left;
+    margin-right: 15px;
+    margin-top:3px;
+}
+
+.button.button-primary.ukuupeople-purchase-button {
+    height: 50px;
+    width: 100%;
+    background: #457FB4 none repeat scroll 0 0;
+    border-color: #457FB4;
+}
+
+.button.button-primary.ukuupeople-purchase-button > span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ukuupeople-purchase-description {
+    float:left;
+    height:60px;
+    width:450px;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-decoration:none;
+}
+
+.ukuupeople-purchase-description a {
+    text-decoration:none;
+}
+
+/*==========responsive css start here==============*/
+
+@media screen and (max-width:768px) {
+    .ukuupeople-notification,
+    .ukuupeople-container {
+	display:block;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .ukuupeople-purchase-description {
+	width:100%;
+	height:auto;
+    }
+}
+
+/*========responsive css ends here ================*/
+
+/* ====== summary view for activity ==============*/
+
+.post-type-wp-type-activity .summary-activity-main, .admin_page_view-touchpoint .summary-activity-main { 
+    overflow:hidden;
+}
+
+.summary-activity-main div {
+    min-height: 450px;
+}
+
+.post-type-wp-type-activity .summary-activity-view div, .admin_page_view-touchpoint .summary-activity-view div {
+    min-height: 165px;
+}
+
+.post-type-wp-type-activity .left-summary-activity, .admin_page_view-touchpoint .left-summary-activity {
+    float:left; 
+    width:60%;
+    //border:1px solid;
+    padding:10px 10px 10px 0px;
+}
+
+.post-type-wp-type-activity .right-summary-activity, .admin_page_view-touchpoint .right-summary-activity { 
+    overflow:hidden;
+    min-height:475px;
+    padding:10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .post-type-wp-type-activity .left-summary-activity, .admin_page_view-touchpoint .left-summary-activity { 
+	float: none;
+	margin-right:0;
+	width:auto;  
+    }
+}
+
+/* ===== outer summary =============*/
+
+.post-type-wp-type-activity .left-photo-summary-activity, .admin_page_view-touchpoint .left-photo-summary-activity {
+    overflow:hidden;
+    min-height:165px !important;
+}
+
+
+.post-type-wp-type-activity .left-photo-activity, .admin_page_view-touchpoint .left-photo-activity {
+    min-height:165px !important;
+    float:left; 
+    width:25%;
+}
+
+.post-type-wp-type-activity .left-photo-adjustments, .admin_page_view-touchpoint .left-photo-adjustments {
+    width:15% !important;
+}
+
+@media screen and (max-width: 1270px) {
+    .post-type-wp-type-activity .left-photo-activity, .admin_page_view-touchpoint .left-photo-activity {
+	float: none;
+	margin-right:0;
+	width:100%;
+    }
+}
+
+.post-type-wp-type-activity .left-activity-main, .admin_page_view-touchpoint .left-activity-main {
+    overflow:hidden;
+}
+
+.post-type-wp-type-activity .summary-display-name, .admin_page_view-touchpoint .summary-display-name {
+    font-weight:600;
+    color: #457fb4;
+    font-size:20px;
+    margin-top:10px;
+    display:block;
+}
+
+.post-type-wp-type-activity .summary-org-name, .admin_page_view-touchpoint .summary-org-name {
+    font-weight:500;
+    color:#30a08b;
+    font-size:13px;
+    margin-top:10px;
+    display:block;
+}
+
+.post-type-wp-type-activity .contact-dashboard, .admin_page_view-touchpoint .contact-dashboard {
+    margin-top:10px;
+    display:block;
+}
+
+.post-type-wp-type-activity .subject-summary, .admin_page_view-touchpoint .subject-summary {
+    margin-top:10px;
+    min-height:20px !important;
+}
+
+.post-type-wp-type-activity .label-subject, .admin_page_view-touchpoint .label-subject {
+    margin-right:15px;
+    font-weight:600;
+    font-size:12px;
+    color:#464646;
+}
+
+.post-type-wp-type-activity .subject-content, .admin_page_view-touchpoint .subject-content {
+    color: #9900cc;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post-type-wp-type-activity .type-summary, .admin_page_view-touchpoint .type-summary {
+    margin-top:5px;
+    min-height:20px !important;
+}
+
+.post-type-wp-type-activity .type-content, .admin_page_view-touchpoint .type-content {
+    color : #457fb4;
+    margin-left:5px;
+}
+
+/*  SECTIONS  */
+.post-type-wp-type-activity .summary-datetime-section, .admin_page_view-touchpoint .summary-datetime-section {
+    clear: both;
+    padding-top: 3px;
+    margin: 0px;
+}
+
+.post-type-wp-type-activity .date-time-a, .admin_page_view-touchpoint .date-time-a {
+    min-height:30px !important;
+}
+
+.post-type-wp-type-activity .date-time-b, .admin_page_view-touchpoint .date-time-b {
+    min-height:30px !important;
+}
+
+.post-type-wp-type-activity .date-time-c, .admin_page_view-touchpoint .date-time-c {
+    min-height:30px !important;
+}
+
+.post-type-wp-type-activity .summary-datetime-col.summary-status.date-time-b, .admin_page_view-touchpoint .summary-datetime-col.summary-status.date-time-b {
+    width: 28%;
+}
+
+/*  GRID OF THREE           =========== */
+@media only screen and (min-width: 1280px) {
+    .post-type-wp-type-activity .summary-status, .admin_page_view-touchpoint .summary-status {
+	width: 23.5%;
+    }
+
+    /*  COLUMN SETUP  */
+    .post-type-wp-type-activity .summary-datetime-col, .admin_page_view-touchpoint .summary-datetime-col {
+	display: block;
+	float: left;
+    }
+
+    .post-type-wp-type-activity .summary-datetime-col:first-child, .admin_page_view-touchpoint .summary-datetime-col:first-child {
+	margin-left: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+.post-type-wp-type-activity .summary-datetime-section, .admin_page_view-touchpoint .summary-datetime-section {
+	width: 100%; /* fix for Firefox */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.post-type-wp-type-activity .date-time-a, .admin_page_view-touchpoint .date-time-a {
+	margin-bottom:5px;
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;
+	-webkit-flex-order: 1;
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+}
+
+.post-type-wp-type-activity .date-time-b, .admin_page_view-touchpoint .date-time-b {
+	margin-bottom:5px;
+	-webkit-box-ordinal-group: 3;
+	-moz-box-ordinal-group: 3;
+	-webkit-flex-order: 2;
+}
+
+.post-type-wp-type-activity .date-time-c, .admin_page_view-touchpoint .date-time-c {
+	margin-bottom:5px;
+}
+
+}
+
+.post-type-wp-type-activity .summary-datetime-col.summary-status_custom.summary-status.date-time-a > a, .admin_page_view-touchpoint .summary-datetime-col.summary-status_custom.summary-status.date-time-a > a {
+    text-decoration: none;
+}
+
+.post-type-wp-type-activity .summary-datetime-section.group, .admin_page_view-touchpoint .summary-datetime-section.group {
+    min-height: 40px;
+    margin-top:12px;
+}
+
+.post-type-wp-type-activity .summary-datetime-col summary-status date-time-a, .admin_page_view-touchpoint .summary-datetime-col summary-status date-time-a , .summary-datetime-col summary-date , .summary-datetime-col summary-time {
+    padding:5px;
+}
+
+.post-type-wp-type-activity .completed-summary, .admin_page_view-touchpoint .completed-summary {
+    background-color: #39b54a;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    height: 25px;
+    color:#ffffff;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 140px;
+}
+
+.post-type-wp-type-activity .attachment-summary, .admin_page_view-touchpoint .attachment-summary {
+    min-height:20px !important;
+    margin-top:10px;    
+}
+
+.post-type-wp-type-activity .summary-activity-main .attachment-first, .admin_page_view-touchpoint .summary-activity-main .attachment-first {
+    border:1px solid #959595;
+    width:120px;
+    min-height:120px;
+    position: relative;
+}
+
+.post-type-wp-type-activity .summary-datetime-section.group.section-custom, .admin_page_view-touchpoint .summary-datetime-section.group.section-custom {
+    min-height:125px !important;
+}
+
+.post-type-wp-type-activity .attachment-pdf, .admin_page_view-touchpoint .attachment-pdf {
+    background-color: #771D78;
+}
+
+.post-type-wp-type-activity .attachment-doc, .admin_page_view-touchpoint .attachment-doc {
+    background-color:#2272BB;
+}
+
+.post-type-wp-type-activity .attachment-text, .admin_page_view-touchpoint .attachment-text {
+    color: #ffffff;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0 0 25px;
+}
+
+.post-type-wp-type-activity .summary-details, .admin_page_view-touchpoint .summary-details {
+    width:98%;
+    min-height:120px !important;
+    padding: 5px 0 15px 10px;
+    background-color:#ffffff;
+}
+
+.post-type-wp-type-activity .summary-details-head, .admin_page_view-touchpoint .summary-details-head {
+    margin-top:5px;
+    min-height:20px !important;
+    padding-left:5px;
+    margin-bottom: 6px;
+}
+
+.post-type-wp-type-activity .summary-details-body, .admin_page_view-touchpoint .summary-details-body {
+    margin-top:5px;
+    min-height:100px !important;
+    padding-left:5px;
+    color:#949494;
+    word-wrap:break-word;
+}
+
+.post-type-wp-type-activity .summary-assigned-to, .admin_page_view-touchpoint .summary-assigned-to {
+    margin-top:15px;
+    min-height: 185px !important;
+    padding: 8px 0 15px 10px;
+    background-color:#ffffff;
+}
+
+/*-------------responsive ---------------*/
+
+/*  SECTIONS  */
+.post-type-wp-type-activity .assigned-section, .admin_page_view-touchpoint .assigned-section {
+    clear: both;
+    padding-top: 10px;
+    margin: 0px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.post-type-wp-type-activity .custom-assigned-for-attachments-section, .admin_page_view-touchpoint .custom-assigned-for-attachments-section {
+    clear: both;
+    padding-top: 10px;
+    margin: 0;
+    min-height: 150px !important;
+    overflow-y: none !important;
+}
+
+.post-type-wp-type-activity .assigned-a, .admin_page_view-touchpoint .assigned-a {
+    min-height:165px !important;
+}
+
+.post-type-wp-type-activity .assigned-b, .admin_page_view-touchpoint .assigned-b {
+    min-height:165px !important;
+}
+
+.post-type-wp-type-activity .assigned-c, .admin_page_view-touchpoint .assigned-c {
+    min-height:165px !important;
+}
+
+/*  GRID OF THREE           ============================================================================= */
+@media only screen and (min-width: 480px) {
+.post-type-wp-type-activity .assigned-contact-3, .admin_page_view-touchpoint .assigned-contact-3 {
+	width: 100%;
+}
+
+    .post-type-wp-type-activity .assigned-contact-2, .admin_page_view-touchpoint .assigned-contact-2 {
+	width: 66.1%;
+    }
+
+.post-type-wp-type-activity .assigned-contact-1 {
+	width: 32.2%;
+}
+
+    .post-type-wp-type-activity .custom-assigned-for-attachments, .admin_page_view-touchpoint .custom-assigned-for-attachments {
+	width: 20% !important;
+	overflow-y:none !important;
+    }
+
+    /*  COLUMN SETUP  */
+    .post-type-wp-type-activity .assigned-column, .admin_page_view-touchpoint .assigned-column {
+	display: block;
+	float: left;
+    }
+
+    .post-type-wp-type-activity .assigned-column:first-child, .admin_page_view-touchpoint .assigned-column:first-child {
+	margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .post-type-wp-type-activity .assigned-section, .admin_page_view-touchpoint .assigned-section {
+	width: 100%; /* fix for Firefox */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+    }
+
+    .post-type-wp-type-activity .assigned-a, .admin_page_view-touchpoint .assigned-a {
+	margin-left:5px;
+	margin-bottom:5px;
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;
+	-webkit-flex-order: 1;
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	width:98%;
+    }
+
+    .post-type-wp-type-activity .assigned-b, .admin_page_view-touchpoint .assigned-b {
+	-webkit-box-ordinal-group: 3;
+	-moz-box-ordinal-group: 3;
+	-webkit-flex-order: 2;
+	-ms-flex-order: 2;
+	-webkit-order: 2;
+	order: 2;
+	width:98%;
+    }
+
+    .post-type-wp-type-activity .assigned-c, .admin_page_view-touchpoint .assigned-c {
+	margin-bottom:5px;
+	width:98%;
+    }
+}
+
+.post-type-wp-type-activity .assigned-section, .admin_page_view-touchpoint .assigned-section {
+    min-height: 130px !important;
+    padding: 5px;
+}
+
+.post-type-wp-type-activity .assigned-column assigned-contact-1 a , .admin_page_view-touchpoint .assigned-column assigned-contact-1 a , .assigned-column assigned-contact-2 , .assigned-column assigned-contact-3 {
+    padding:5px;
+}
+
+.post-type-wp-type-activity .assigned-image, .admin_page_view-touchpoint .assigned-image {
+    min-height: 125px !important;
+}
+
+.post-type-wp-type-activity .assigned-name, .admin_page_view-touchpoint .assigned-name {
+    display:block;
+    padding-top:5px;
+    color: #646464;
+    font-weight:400;
+}
+
+.post-type-wp-type-activity .start-date-summary, .admin_page_view-touchpoint .start-date-summary {
+    float:left;
+    display:block;
+    font-size:18px;
+    padding-top:2px;
+    font-weight:600;
+    margin-left:15px;
+}
+
+.ukuucalendar,.ukuuclock {
+    display: inline-block;
+    background: url('../images/ukuusprite.png') no-repeat;
+    overflow: hidden; 
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.ukuucalendar {
+    padding-top:5px; 
+    float:left;
+    background-position: -5px -80px;
+    width: 20px; 
+    height: 20px;
+}
+
+.ukuuclock { 
+    background-position: -5px -155px;
+    width: 20px;
+    height: 20px;
+}
+
+/* dashboard-widgets-wrap */
+#quickAddform {
+    overflow: hidden;
+}
+
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd {
+    width:100%;
+}
+
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input,
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd textarea,
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd select {
+    width:100%;
+}
+
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="dsdate"],
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="dedate"],
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="dstime"],
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="detime"] {
+    float:left;
+    width:38% !important;
+}
+
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="dupload"],
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget .quickadd input[name="dassign"] {
+    background-color:#ACACAC;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    border-style: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+#dashboard-widgets-wrap #ukuuCRM-dashboard-createactivity-widget #quickAddform input[name="quickAdd"] {
+    margin-top:3px;
+    float: right;
+}
+
+.quickadd .quickadd-label {
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.quickadd .ukuucalendar {
+    margin: 0 9px 0 8px;
+}
+
+.quickadd .ukuuclock {
+    margin: 0 0 0 8px;
+}
+
+/* dashboard-widgets-wrap */
+
+/* summary touchpoints changes start */
+.post-type-wp-type-activity .under-image, .admin_page_view-touchpoint .under-image {
+    position:relative;
+    z-index: 1;
+}
+
+.post-type-wp-type-activity .over-image, .admin_page_view-touchpoint .over-image {
+    position: absolute;
+    z-index: 3;
+    margin:28px;
+}
+
+.post-type-wp-type-activity .summary-activity-main div.inner-attachment-first, .admin_page_view-touchpoint .summary-activity-main div.inner-attachment-first {
+    background-color: #000;
+    min-height: 120px !important;
+    opacity: 0.1;
+    position: absolute;
+    width: 120px;
+    z-index: 2;
+}
+
+.post-type-wp-type-activity .edit-touchpoint, .admin_page_view-touchpoint .edit-touchpoint {
+    min-height:20px !important;
+    margin-top:30px;
+    float:right;
+}
+
+.post-type-wp-type-activity .edit-touchpoint a, .admin_page_view-touchpoint .edit-touchpoint a {
+    text-decoration:none;
+}
+
+.over-image:hover {
+    display: block;
+}
+
+/* summary touchpoints changes end */
+
+input.disabled, input:disabled, select.disabled, select:disabled, textarea.disabled, textarea:disabled, .first-page, .pre-page, .last-page, .next-page {
+    background: #008ec2 none repeat scroll 0 0;
+    border: 1px solid #0073aa;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    padding: 5px 12px;
+}
+
+#activity .page-tablenav {
+    margin-top: 10px;
+}
+
+.post-type-wp-type-contacts #third-sidebar-contact {
+    margin: 0 0 0 3.25%;
+}
+
+/* hide Visibility field in createbox touchpoint */
+.post-type-wp-type-activity #misc-publishing-actions #visibility {
+    display: none !important;
+}
+
+/* Ukuu Welcome Page Dashboard */
+
+.ukuu-about {
+font-size : 15.5px;
+}
+.ukuu-content-p {
+font-size : 15px;
+margin-top: 12px;
+}
+
+.div-about-content > h2 {
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.dashboard_page_ukuu-about , .dashboard_page_ukuu-get-started, .dashboard_page_ukuu-add-ons .ukuu-welcome {
+    color: #32373c;
+    font-size: 2.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 0;
+}
+
+.ukuu-social-items-wrap , .ukuu-social-items-wrap > div, .ukuu-welcome-h1 {
+  display: inline;
+}
+
+.ukuu-dahsboard-right {
+  display: inline-block;
+  width: 15%;
+	vertical-align:top;
+}
+
+.dashboard_page_ukuu-about , .dashboard_page_ukuu-get-started, .dashboard_page_ukuu-add-ons .ukuu-about {
+  font-size: 1.1em;
+}
+
+.div-cafe-mockup {
+  display: inline-block;
+  width: 25%;
+  margin-right: 25px;
+}
+.div-about-content  h3 {
+  line-height: 30px;
+  margin-top: 0 !important;
+}
+.div-about-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+.ukuu-cafe-mockup {
+  margin-bottom: 50px;
+}
+.dashboard_page_ukuu-about .ukuu-newsletter-intro, .dashboard_page_ukuu-get-started .ukuu-newsletter-intro, .dashboard_page_ukuu-add-ons .ukuu-newsletter-intro  {
+    color: #777;
+    font-size: 13px;
+    font-style: italic;
+}
+.ukuu-welcome {
+  display: inline;
+  margin-right: 20px;
+}
+.div-cafe-mockup > img {
+  height: auto;
+  width: 100%;
+}
+.ukuu-dahsboard-left{
+  display: inline-block;
+  width: 75%;
+  margin-right: 30px;
+}
+.ukuu-dahsboard-left-inside, #ukuu-dashboard-subscribe-form {margin-left: 12px;}
+.ukuu-dahsboard-top, .ukuu-dahsboard-bottom-right {
+  margin-left: 8px;
+    margin-top:30px !important;
+}
+.ukuu-dahsboard-bottom {
+  margin-left: 13px;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  display: inline-block;
+  padding-right: 20px;
+  width: 22%;
+}
+.div-subscribe-button {width: 10%;display: inline-block; vertical-align: top;}
+
+.ukuu-get-h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  width: 61%;
+}
+.p-ukuu-get-started, .ukuu-get-start-img {width: 50%;}
+
+.ukuu-dahsboard-top {width: 80%; margin-bottom: 40px;}
+
+.ukuu-add-on-img {
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  width: 30%;
+  vertical-align: top;
+}
+.ukuu-add-on-img-main {
+  margin-top: 30px;
+  width: 65%;
+}
+.add-on-text {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+/* navbar*/
+.dashboard_page_ukuu-about .nav-tab-wrapper, .dashboard_page_ukuu-get-started .nav-tab-wrapper, .dashboard_page_ukuu-add-ons .nav-tab-wrapper{
+  border-bottom: 1px solid #ccc;
+  margin-left: 8px;
+  width: 67%;
+}
+.dashboard_page_ukuu-about .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-get-started .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-add-ons  .nav-tab-wrapper .nav-tab{
+  margin-left: -11px !important;
+}
+
+/* end of navbar*/
+/*marisa's notes: this image is much smaller than the container, so it should be set at 35% until it can be replaced with a proper image. it's being degraded*/
+.ukuu-add-on-img > img, .ukuu-dahsboard-right > img {
+  width: 35%;
+  height: auto;
+}
+.ukuu-get-start-img > img {
+  width: 100%;
+  height: auto;
+}
+
+/*Media*/
+@media (min-width: 1200px) and (max-width: 1499px){
+.ukuu-dahsboard-left {width: 80%!important;}
+.div-subscribe-fname, .div-subscribe-lname {width: 20%!important;}
+.div-subscribe-fname > input , .required.email, .div-subscribe-lname > input{
+  width: 100% !important;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  padding-right: 5px !important;
+  width: 30% !important;
+}
+.ukuu-welcome {
+  font-size: 27px !important;
+  font-weight: bold !important;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {width: 27%!important;}
+}
+
+@media (min-width: 961px) and (max-width: 1199px){
+
+.ukuu-welcome {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+.ukuu-dahsboard-top {width: 90%!important;}
+.div-subscribe-fname > input , .required.email, .div-subscribe-lname > input{
+  width: 100% !important;
+}
+.div-subscribe-button {
+  margin: 15px 0!important;
+  width: 20%!important;
+}
+#mc-embedded-subscribe {width: 100%;}
+.ukuu-dahsboard-left {width: 80%!important;}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  padding-right: 5px!important;
+  width: 30%!important;
+}
+.ukuu-add-on-img-main {
+  width: 70%!important;
+}
+.div-about-content {width: 60%!important;}
+.div-cafe-mockup {width: 35%!important; margin-right: 20px!important;}
+}
+
+@media (min-width: 783px) and (max-width: 960px){
+.ukuu-dahsboard-top {width: 90%!important;}
+.ukuu-dahsboard-right {width: 20%!important;}
+.ukuu-dahsboard-left {
+  margin-right: 25px!important;
+  width: 75%!important;
+}
+.ukuu-welcome {
+  font-size: 28px !important;
+  font-weight: bold !important;
+  margin-right: 0 !important;
+  width: 90% !important;
+  display: inline-block!important;
+  margin-top: 0!important;
+}
+.div-subscribe-fname > input , .required.email, .div-subscribe-lname > input{
+  width: 100% !important;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  padding-right: 2px!important;
+  width: 32%!important;
+}
+.ukuu-add-on-img-main {width: 85%!important;}
+.div-subscribe-button {
+  margin: 15px 0!important;
+  width: 20%!important;
+}
+
+input::-webkit-input-placeholder { font-size: 12px; color: #555; }
+input::-moz-placeholder { font-size: 12px; color: #555; }
+input:-ms-input-placeholder { font-size: 12px; color: #555; }
+input:-moz-placeholder { font-size: 12px; color: #555; }
+
+.ukuu-get-h3 {width: 70%!important;}
+.p-ukuu-get-started, .ukuu-get-start-img {width: 70%!important;}
+
+.div-about-content {width: 60%!important;}
+.div-cafe-mockup {width: 35%!important; margin-right: 20px!important;}
+
+}
+
+@media (min-width: 481px) and (max-width: 782px){
+  .ukuu-welcome {
+  display: inline-block !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  font-size: 30px!important;
+  font-weight: 600!important;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  display: block !important;
+  margin-bottom: 12px;
+  padding-right: 0 !important;
+  width: 100%;
+}
+.ukuu-dahsboard-right {
+  margin: 0 auto;
+  vertical-align: top;
+  width: 25%!important;
+  display: block!important;
+}
+.ukuu-dahsboard-left {
+  display: block !important;
+  margin-bottom: 35px;
+  margin-right: 0 !important;
+  padding: 0 15px 0 5px;
+  width: auto;
+}
+.ukuu-dahsboard-top {
+  margin-left: 0px !important;
+  width: 100% !important;
+}
+.dashboard_page_ukuu-about .nav-tab-wrapper, .dashboard_page_ukuu-get-started .nav-tab-wrapper, .dashboard_page_ukuu-add-ons .nav-tab-wrapper {width: 95%!important; margin-left: 0!important;}
+.ukuu-add-on-img-main {width: 100%!important;}
+.ukuu-add-on-img {width: 46%!important; margin-bottom: 25px!important;}
+.ukuu-get-h3 {width: 92%!important;}
+.p-ukuu-get-started, .ukuu-get-start-img {width: 90%!important;}
+
+.ukuu-dahsboard-top, .ukuu-dahsboard-bottom-right {
+  margin-left: 0!important;
+}
+
+.div-about-content {
+  display: block !important;
+  margin-top: 20px;
+  padding: 0 15px !important;
+  vertical-align: top;
+  width: auto !important;
+}
+.div-cafe-mockup {
+  display: block !important;
+  margin-right: 0 !important;
+  padding: 0 20px 0 0;
+  width: auto !important;
+}
+}
+
+@media (min-width: 280px) and (max-width: 480px){
+.ukuu-welcome {
+  display: inline-block !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  font-size: 30px!important;
+  font-weight: 600!important;
+  line-height: 38px;
+}
+.div-subscribe-email, .div-subscribe-fname, .div-subscribe-lname {
+  display: block !important;
+  margin-bottom: 12px;
+  padding-right: 0 !important;
+  width: 100%;
+}
+.ukuu-dahsboard-right {
+  margin: 0 auto;
+  vertical-align: top;
+  width: 35%!important;
+  display: block!important;
+}
+.ukuu-dahsboard-left {
+  display: block !important;
+  margin-bottom: 35px;
+  margin-right: 0 !important;
+  padding: 0 15px 0 10px;
+  width: auto;
+}
+.ukuu-dahsboard-bottom {margin-left: 0!important;}
+
+.dashboard_page_ukuu-about .nav-tab-wrapper, .dashboard_page_ukuu-get-started .nav-tab-wrapper, .dashboard_page_ukuu-add-ons .nav-tab-wrapper {
+  border-bottom: 0 none !important;
+  margin-left: 0 !important;
+  padding: 0 15px 0 10px;
+  width: auto !important;;
+}
+.ukuu-add-on-img-main {padding: 0 20px 0 10px!important; width: auto!important;}
+.add-on-text {
+  margin-left: 0!important;
+  text-align: center;
+}
+.dashboard_page_ukuu-about .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-get-started .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-add-ons .nav-tab-wrapper .nav-tab {
+  border-bottom: 1px solid #ccc !important;
+  display: block !important;
+  float: none !important;
+  margin-bottom: 20px;
+  width: auto !important;
+  margin-left: 0!important;
+}
+.ukuu-dahsboard-top {width: 100%!important; margin-left: 0!important;}
+.ukuu-add-on-img {
+  display: block!important;
+  margin-right: 0!important;
+  width: 100%!important;
+}
+.p-ukuu-get-started, .ukuu-get-start-img {
+  width: auto!important;
+  padding: 0 15px 0 0!important;
+}
+.ukuu-get-h3 {width: auto!important; padding: 0 20px 0 10px!important;}
+.div-about-content {
+  display: block !important;
+  margin-top: 20px;
+  padding: 0 15px !important;
+  vertical-align: top;
+  width: auto !important;
+}
+.div-cafe-mockup {
+  display: block !important;
+  margin-right: 0 !important;
+  padding: 0 20px 0 0;
+  width: auto !important;
+}
+}
+#emailErrID {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 0;
+    margin-top: 9px;
+}
+
+#mc-embedded-subscribe-form-ukuu {
+  margin-left: 10px;
+}
+
+/* Quick Edit related changes for Assignee and Status options */
+fieldset.ukuu-custom-quick-edit {
+  width: 32% !important;
+}
+
+#ukuu-quick-edit-activity-status, #ukuu-quick-edit-touchpoint-assignee {
+  float: left;
+  width: 48%;
+  padding: 4px;
+}
+
+.ukuu-inline-edit-touchpoint-status-label, .ukuu-inline-edit-touchpoint-assignee-label {
+  text-align: center;
+  display: block;
+  line-height: 2.5;
+  margin: 0.2em 0;
+}
+
+/* Marisa's additional css */
+
+a.nav-tab {
+    padding: 5px 20px !important;
+}
+
+
+.dashboard_page_ukuu-about .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-get-started .nav-tab-wrapper .nav-tab, .dashboard_page_ukuu-add-ons .nav-tab-wrapper .nav-tab {
+    margin-left: 5px !important; */
+}
+
+.ukuu-add-on-button {
+    text-align: right !important;
+} 
+
+/* CSS to override Give plugins CSS for dialog box in Activity Dashlet */
+.ui-dialog .ui-dialog-titlebar-close {
+    margin: -5px;
+}
+
+.override-give-css .ui-button-icon-primary.ui-icon {
+    display: none !important;
+}

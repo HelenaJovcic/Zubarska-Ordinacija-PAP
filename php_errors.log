@@ -1,0 +1,1 @@
+[27-Jun-2017 18:20:07 UTC] WordPress database error Table 'c9.wp_upicrm_fields' doesn't exist for query SELECT * FROM wp_upicrm_fields made by activate_plugin, include_once('/plugins/upi-crm-universal-crm-solution/upicrm.php'), UpiCRMFields->get_as_array
